@@ -1,0 +1,121 @@
+li, a, button {
+	font-family: "Montserrat";
+	font-weight: 500;
+	font-size: 16px;
+	color: #f7e013;
+	text-decoration: none;
+}
+
+header{
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+	padding: 5px 10%;
+	background-color:#000;
+}
+
+.logo{
+	cursor: pointer;
+	margin-right:auto;
+	
+	padding-right: 150px;
+}
+
+.navlinks{
+	list-style: none; 
+}
+.navlinks li{
+	display: inline-block;
+	padding: 0px 20px; 
+}
+.navlinks li a{
+	transition: all 0.3s ease 0s;
+	color: #fff; /*#24252A;*/
+}
+.navlinks li a:hover{
+	color: #f7e013;
+}
+button{
+	padding: 9px 25px;
+	background-color: #161718;/*#b71c1c;/*rgba(0,136,169,1);*/
+	border: none;
+	border-radius: 50px;
+	cursor:  pointer;
+	transition: all 0.3s ease 0s;
+}
+button:hover{
+	background-color: #161718;/*#f05545;/*rgba(0,136,169,0.8);*/
+
+}
+
+body{
+	background-image: url("assets/img/1.jpg"); 
+	background-size: cover;
+	height: calc(110vh - 76px);
+	margin: 0;
+	padding: 0;
+	font-family: sans-serif;
+	/*background: #34495e;*/
+}
+.box{
+	width: 400px;
+	padding: 40px;
+	position: absolute;
+	top: 55%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	background-color: #221e1ed6; /*#1e1b1b;*/ /*rgba(14, 26, 38, 0.7);*/ /*rgba(4, 5, 6, 0.7);*/
+	/*background: #191919;*/
+	text-align: center;
+	border-radius: 24px;
+
+}
+
+.box h1{
+	color: white;
+	text-transform: uppercase;
+	font-weight: 50;
+	font-size: 25px;
+	font-family: "Montserrat";
+}
+
+.box input[type = "text"],.box input[type = "password"]{
+	border: 0;
+	background: none;
+	display: block;
+	margin: 20px auto;
+	text-align: center;
+	border: 2px solid #3498db;
+	font-family: 'Montserrat';
+	font-size: 14px;
+	font-weight: 200px;
+	padding: 14px 10px;
+	width: 200px;
+	outline: none;
+	color: white;
+	border-radius: 24px;
+	transition: 0.25s; 
+}	
+.box input[type = "texts"]:focus,.box input[type = "password"]:focus{
+	width: 280px;
+	border-color:  #3498db ;/*#2ecc71;*/
+}
+.box input[type = "submit"]{
+	border: 0;
+	background: none;
+	font-family: "Montserrat";
+	font-size: 13px;
+	display: block;
+	margin: 20px auto;
+	text-align: center;
+	border: 2px solid #f7e013; /*#2ecc71;*/
+	padding: 14px 40px;
+	outline: none;
+	color: white;
+	border-radius: 24px;
+	transition: 0.25s;
+	cursor: pointer;
+}
+.box input[type = "submit"]:hover{
+	background:  #f7e013;
+}
